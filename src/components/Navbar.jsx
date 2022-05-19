@@ -1,5 +1,5 @@
-import { Pets } from '@mui/icons-material'
-import { AppBar, Box, InputBase, styled, Toolbar, Typography } from '@mui/material'
+import { Mail, Pets } from '@mui/icons-material'
+import { AppBar, Badge, Box, InputBase, styled, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 
 const StyledToolbar = styled(Toolbar)({
@@ -15,7 +15,6 @@ const Search = styled("div")(({theme}) => ({
 }))
 
 const Icons = styled(Box)(({theme}) => ({
-    backgroundColor:"white",
 }))
 
 const Navbar = () => {
@@ -27,7 +26,11 @@ const Navbar = () => {
             </Typography>
             <Pets sx={{display:{xs:"block", sm:"none"}}}/>
             <Search><InputBase placeholder='search...'/></Search>
-            <Icons>icon</Icons>
+            <Icons>
+            <Badge badgeContent={4} color="error">
+                <Mail />
+            </Badge>
+            </Icons>
         </StyledToolbar>
     </AppBar>
   )
