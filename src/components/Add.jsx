@@ -1,5 +1,5 @@
-import { Add as AddIcon } from '@mui/icons-material'
-import { Avatar, Box, Fab, Modal, styled, Tooltip, Typography } from '@mui/material'
+import { Add as AddIcon, DateRange, EmojiEmotions, Image, Person, VideoCameraBack } from '@mui/icons-material'
+import { Avatar, Box, Button, ButtonGroup, Fab, Modal, Stack, styled, TextField, Tooltip, Typography } from '@mui/material'
 import React, { useState } from 'react'
 
 const SytledModal = styled(Modal)({
@@ -11,6 +11,8 @@ const SytledModal = styled(Modal)({
 const UserBox = styled(Box)({
   display:"flex",
   alignItems:"center",
+  gap:"10px",
+  marginBottom:"20px",
 })
 
 const Add = () => {
@@ -40,6 +42,30 @@ const Add = () => {
               />
               <Typography fontWeight={500} variant="span">Joe Lam</Typography>
           </UserBox>
+          <TextField
+          sx={{width:"100%"}}
+          id="standard-multiline-static"
+          multiline
+          rows={3}
+          placeholder="What's on your mind?"
+          variant="standard"
+          />
+          <Stack direction="row" gap={1} mt={2} mb={3}>
+            <EmojiEmotions color='primary'/>
+            <Image color='secondary'/>
+            <VideoCameraBack color='success'/>
+            <Person color='error'/>
+          </Stack>
+          <ButtonGroup
+            variant="contained"
+            aria-label="outlined primary button group"
+            fullWidth
+            >
+            <Button>Post</Button>
+            <Button sx={{width:"100px"}}>
+              <DateRange/>
+            </Button>
+          </ButtonGroup>
         </Box>
       </SytledModal>
     </>
