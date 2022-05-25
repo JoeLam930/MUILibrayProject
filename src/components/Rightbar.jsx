@@ -8,11 +8,11 @@ const Rightbar = () => {
           <Typography variant='h6' fontWeight={100}>Online Friends
           </Typography>
           <AvatarGroup max={4}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-            <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-            <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
-            <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
+            <Avatar alt="Remy Sharp" src="" />
+            <Avatar alt="Travis Howard" src="" />
+            <Avatar alt="Cindy Baker" src="" />
+            <Avatar alt="Agnes Walker" src="" />
+            <Avatar alt="Trevor Henderson" src="" />
           </AvatarGroup>
           <Typography variant='h6' fontWeight={100} mt={2} mb={2}>
             Latest Photos
@@ -37,7 +37,7 @@ const Rightbar = () => {
           <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="" />
             </ListItemAvatar>
             <ListItemText
               primary="Brunch this weekend?"
@@ -59,7 +59,7 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="Travis Howard" src="" />
             </ListItemAvatar>
             <ListItemText
               primary="Summer BBQ"
@@ -81,7 +81,7 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+              <Avatar alt="Cindy Baker" src="" />
             </ListItemAvatar>
             <ListItemText
               primary="Oui Oui"
